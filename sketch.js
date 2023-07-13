@@ -40,8 +40,7 @@ function setup() {
   ball = Bodies.circle(100,200,20,ball_options);
   World.add(world,ball);
   
-  console.log(ball.y);
-  
+Matter.Constrain.create();
 
   rectMode(CENTER);
   ellipseMode(RADIUS);
